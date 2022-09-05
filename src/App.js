@@ -1,21 +1,22 @@
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
 
 import Header from './components/Header';
-import Hero from './components/Hero';
-import AboutMe from './components/AboutMe';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Footer from './components/Footer';
+import Home from './Pages/Home';
+import Projects from './Pages/HeroProjects';
+import Contact from './Pages/Contact';
+import NotFound from './Pages/NotFound';
 
 function App() {
   return (
     <>
       <Header/>
-      <Hero/>
-      <AboutMe/>
-      <Projects/>
-      <Skills />
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
     </>
   );
 }

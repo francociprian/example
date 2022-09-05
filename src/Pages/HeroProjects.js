@@ -1,6 +1,5 @@
-import React from 'react';
+import React , { useEffect }from 'react';
 import ImageProjects from '../assets/ImageProjects.png';
-import Button from './Button';
 
 
 const TechnologiesProjects = ({title}) => {
@@ -28,15 +27,20 @@ const CardProjects = () => {
 };
 
 export default function Projects() {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
+  
   return (
-    <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA] my-32'>
+    <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA]'>
       <h1 className='tracking-wider text-2xl mb-20'>Projects</h1>
       <div className='my-10 grid grid-cols-2 gap-7'>
         <CardProjects />
         <CardProjects />
-      </div>
-      <div className='flex justify-center items-center' >
-        <Button name={'SEE ALL PROJECTS'} to={'/projects'}/>
+        <CardProjects />
+        <CardProjects />
+        <CardProjects />
+        <CardProjects />
       </div>
     </div>
   )
