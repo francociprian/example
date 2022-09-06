@@ -20,10 +20,10 @@ export const ThemeProvider = ({ initialTheme, children }) => {
 
   const checkTheme = (existing) => {
     const root = window.document.documentElement;
+    const body = window.document.body;
     const isDark = existing === 'dark';
 
-    root.style.setProperty('background-color', isDark ? '#041F31' : '#FAFAFA');
-    
+    body.classList.add('transition-colors', 'duration-500', 'dark:bg-[#041F31]', 'bg-[#FAFAFA]')
     root.classList.remove( isDark ? 'light' : 'dark');
     root.classList.add(existing);
 

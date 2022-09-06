@@ -9,7 +9,7 @@ import NotFound from './Pages/NotFound';
 
 function App() {
   return (
-    <div className='transition-colors duration-300 dark:bg-[#041F31] bg-[#FAFAFA]'>
+    <>
       <Header/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path='*' element={<NotFound/>}/>
       </Routes>
-    </div>
+    </>
   );
 }
 
