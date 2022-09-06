@@ -1,5 +1,6 @@
 import React , { useEffect }from 'react';
 import ImageProjects from '../assets/ImageProjects.png';
+import { motion, AnimatePresence } from "framer-motion";
 
 
 const TechnologiesProjects = ({title}) => {
@@ -27,21 +28,36 @@ const CardProjects = () => {
 };
 
 export default function Projects() {
+  const transition = { duration: 1, ease: [0.6, -0.05, 0.01, 0.9] }
   useEffect(() => {
     window.scrollTo(0,0)
   }, [])
   
   return (
-    <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA]'>
-      <h1 className='tracking-wider pt-32 text-2xl'>Projects</h1>
-      <div className=' my-28 grid grid-cols-2 gap-10'>
-        <CardProjects />
-        <CardProjects />
-        <CardProjects />
-        <CardProjects />
-        <CardProjects />
-        <CardProjects />
-      </div>
-    </div>
+    <AnimatePresence
+    mode='wait'
+    initial={{ opacity: 0 }}
+    exit={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        exit={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={transition}
+      >
+        <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA]'>
+          <h1 className='tracking-wider pt-32 text-2xl'>Projects</h1>
+          <div className=' my-28 grid grid-cols-2 gap-10'>
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+            <CardProjects />
+          </div>
+        </div>
+      </motion.div>
+    </AnimatePresence>
   )
 }

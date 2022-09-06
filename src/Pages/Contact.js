@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+import { motion, AnimatePresence } from "framer-motion";
 
-export default function Contact() {
+const FormContact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
@@ -84,5 +85,27 @@ export default function Contact() {
             />
       </form>
     </div>
+  )
+}
+
+export default function Contact() {
+  const transition = { duration: 1, ease: [0.6, -0.05, 0.01, 0.9] }
+  
+  return (
+    <AnimatePresence
+    mode='wait'
+    initial={{ opacity: 0 }}
+    exit={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        exit={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={transition}
+      >
+        <FormContact/>
+      </motion.div>
+    </AnimatePresence>
   )
 }
