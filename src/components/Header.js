@@ -6,7 +6,14 @@ import Button from './Button';
 export default function Header() {
   return (
     <div className=' font-Montserrat font-medium leading-5 '>
-        <div className='text-textLight dark:text-textDark flex justify-between items-center fixed dark:bg-[#041F31] bg-[#FAFAFA] w-full h-20 pl-40 pr-40' >
+        <div 
+            className='
+            w-full h-20 pl-40 pr-40 flex justify-between items-center fixed 
+            text-textLight dark:text-textDark 
+            dark:bg-[#041F31] bg-[#FAFAFA]
+            shadow-sLight dark:shadow-sDark
+            ' 
+        >
             <Link to='/'>Home</Link>
             <nav className='flex justify-end'>
                 <ul className='flex items-center gap-16'>
