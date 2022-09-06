@@ -9,6 +9,8 @@ module.exports = {
         Tinos: ["Tinos", "serif"],
       },
       colors: {
+        'bgLight': '#FAFAFA',
+        'bgDark': '#041F31',
         'textDark': '#BDEBEA',
         'textLight': '#1F2626',
       },
