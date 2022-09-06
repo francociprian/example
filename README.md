@@ -1,1 +1,1 @@
-# Sample Portfolio Mockups 🗒
+# Example Portfolio 🗒
