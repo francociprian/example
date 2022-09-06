@@ -10,7 +10,7 @@ const TechnologiesProjects = ({title}) => {
 
 const CardProjects = () => {
   return(
-    <div className='flex flex-col justify-between bg-[#F5F2FD] dark:bg-[#222525] pb-10'>
+    <div className='flex flex-col justify-between bg-[#F5F2FD] dark:bg-[#222525] pb-10 shadow-sLight dark:shadow-sDark'>
       <img src={ImageProjects} alt='Projects' />
       <div className='px-4 py-4'>
         <h2 className='pb-2'>TITLE PROJECT</h2>
@@ -33,8 +33,8 @@ export default function Projects() {
   
   return (
     <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA]'>
-      <h1 className='tracking-wider text-2xl mb-20'>Projects</h1>
-      <div className='my-10 grid grid-cols-2 gap-7'>
+      <h1 className='tracking-wider pt-32 text-2xl'>Projects</h1>
+      <div className=' my-28 grid grid-cols-2 gap-10'>
         <CardProjects />
         <CardProjects />
         <CardProjects />
