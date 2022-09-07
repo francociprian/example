@@ -15,7 +15,7 @@ const CardProjects = () => {
       <img src={ImageProjects} alt='Projects' />
       <div className='px-4 py-4'>
         <h2 className='pb-2'>TITLE PROJECT</h2>
-        <div className='flex gap-3 pb-3'>
+        <div className='flex flex-wrap gap-3 pb-3'>
           <TechnologiesProjects title={'JAVASCRIPT'}/>
           <TechnologiesProjects title={'REACT'}/>
           <TechnologiesProjects title={'REDUX'}/>
@@ -30,8 +30,8 @@ const CardProjects = () => {
 export default function Projects() {
   return (
     <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA] my-32'>
-      <h1 className='tracking-wider text-2xl mb-20'>Projects</h1>
-      <div className='my-10 grid grid-cols-2 gap-7'>
+      <h1 className='tracking-wider text-2xl mb-20 pl-4'>Projects</h1>
+      <div className='grid grid-cols-1 gap-7 my-8 px-8 sm:grid-cols-2 sm:my-10 sm:px-4'>
         <CardProjects />
         <CardProjects />
       </div>

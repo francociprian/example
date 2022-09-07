@@ -15,7 +15,7 @@ const CardProjects = () => {
       <img src={ImageProjects} alt='Projects' />
       <div className='px-4 py-4'>
         <h2 className='pb-2'>TITLE PROJECT</h2>
-        <div className='flex gap-3 pb-3'>
+        <div className='flex flex-wrap gap-3 pb-3'>
           <TechnologiesProjects title={'JAVASCRIPT'}/>
           <TechnologiesProjects title={'REACT'}/>
           <TechnologiesProjects title={'REDUX'}/>
@@ -47,8 +47,8 @@ export default function Projects() {
         transition={transition}
       >
         <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA]'>
-          <h1 className='tracking-wider pt-32 text-2xl'>Projects</h1>
-          <div className=' my-28 grid grid-cols-2 gap-10'>
+          <h1 className='tracking-wider pt-32 text-2xl pl-4'>Projects</h1>
+          <div className='grid grid-cols-1 gap-10 my-12 px-8 sm:my-28 sm:grid-cols-2 sm:px-4 '>
             <CardProjects />
             <CardProjects />
             <CardProjects />
