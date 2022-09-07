@@ -10,9 +10,12 @@ const Header = ({ menuState, setMenuState }) => {
   }, [location, setMenuState])
 
   return (
-    <header className="absolute w-full z-99 px-[88px] 768Max:px-8 text-black dark:text-[#f6f6f6]">
-      <div className="container fluid">
-        <div className="h-28 flex items-center justify-between">
+    <header className="fixed w-full z-99  876Max:px-8 text-black dark:text-[#f6f6f6] dark:bg-[#041F31] bg-[#FAFAFA] shadow-sLight dark:shadow-sDark">
+      <div 
+        // className="container"
+        className='w-4/5 mx-auto 876Max:w-full'
+        >
+        <div className="h-20 876Max:h-16 flex items-center justify-between">
           <NavLink
             className={
               (navData) => navData.isActive ? 
