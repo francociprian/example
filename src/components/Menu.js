@@ -33,7 +33,7 @@ const Menu = ({ setMenuState, menuState }) => {
                 <div className="container">
                     <motion.div className="flex items-center justify-center h-[80vh]">
                         <motion.ul className="text-center">
-                            <li className=" m-24 text-textLight dark:text-white relative overflow-hidden 480Max:m-16">
+                            <li className="h-16 m-24 text-textLight dark:text-white relative overflow-hidden 480Max:m-16">
                                 <motion.span
                                 initial={{ y: 300, skewY: 4 }}
                                 animate={{
@@ -43,12 +43,12 @@ const Menu = ({ setMenuState, menuState }) => {
                                 exit={{ y: 300, skewY: 40 }}
                                 transition={{ delay: 0, ...transition }}
                                 >
-                                    <NavLink to="/" className={(navData) => navData.isActive ? "text-7xl 480Max:text-5xl capitalize mx-auto font-light underline underline-offset-4" : "text-7xl 480Max:text-5xl capitalize mx-auto font-light"}>
+                                    <NavLink to="/" className={(navData) => navData.isActive ? "text-7xl 480Max:text-5xl capitalize mx-auto font-light underline underline-offset-4 decoration-4 decoration-[#5222D0] dark:decoration-[#00F5A0]" : "text-7xl 480Max:text-5xl capitalize mx-auto font-light"}>
                                         Home
                                     </NavLink>
                                 </motion.span>
                             </li>
-                            <li className=" m-24 text-textLight dark:text-white relative overflow-hidden 480Max:m-16">
+                            <li className="h-16 m-24 text-textLight dark:text-white relative overflow-hidden 480Max:m-16">
                                 <motion.span
                                 initial={{ y: 300, skewY: 40 }}
                                 animate={{
@@ -58,12 +58,12 @@ const Menu = ({ setMenuState, menuState }) => {
                                 exit={{ y: 300, skewY: 40 }}
                                 transition={{ delay: 0.1, ...transition }}
                                 >
-                                    <NavLink to="/projects" className={(navData) => navData.isActive ? "text-7xl 480Max:text-5xl capitalize mx-auto font-light underline underline-offset-4" : "text-7xl 480Max:text-5xl capitalize mx-auto font-light"}>
+                                    <NavLink to="/projects" className={(navData) => navData.isActive ? "text-7xl 480Max:text-5xl capitalize mx-auto font-light underline underline-offset-4 decoration-4 decoration-[#5222D0] dark:decoration-[#00F5A0]" : "text-7xl 480Max:text-5xl capitalize mx-auto font-light"}>
                                         Projects
                                     </NavLink>
                                 </motion.span>
                             </li>
-                            <li className=" m-24 text-textLight dark:text-white relative overflow-hidden 480Max:m-16">
+                            <li className="h-16 m-24 text-textLight dark:text-white relative overflow-hidden 480Max:m-16">
                                 <motion.span
                                 initial={{ y: 300, skewY: 40 }}
                                 animate={{
@@ -73,7 +73,7 @@ const Menu = ({ setMenuState, menuState }) => {
                                 exit={{ y: 300, skewY: 40 }}
                                 transition={{ delay: 0.2, ...transition }}
                                 >
-                                    <NavLink to='/contact' className={(navData) => navData.isActive ? "text-7xl 480Max:text-5xl capitalize mx-auto font-light underline underline-offset-4" : "text-7xl 480Max:text-5xl capitalize mx-auto font-light"}>
+                                    <NavLink to='/contact' className={(navData) => navData.isActive ? "text-7xl 480Max:text-5xl capitalize mx-auto font-light underline underline-offset-4 decoration-4 decoration-[#5222D0] dark:decoration-[#00F5A0]" : "text-7xl 480Max:text-5xl capitalize mx-auto font-light"}>
                                         Contact
                                     </NavLink>
                                 </motion.span>
