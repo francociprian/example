@@ -16,32 +16,32 @@ import Typescript from '../assets/logos/typescript.svg';
  
 const data = [
   {
-        name: 'Javascript',
-        icon: Javascript,
+    name: 'Javascript',
+    icon: Javascript,
   },
   {
-        name: 'Typescript',
-        icon: Typescript,
+    name: 'Typescript',
+    icon: Typescript,
   },
   {
-        name: 'React',
-        icon: ReactJs,
+    name: 'React',
+    icon: ReactJs,
   },
   {
     name: 'NextJs',
     icon: Nextjs,
   },
   {
-        name: 'Mongodb',
-        icon: Mongodb,
+    name: 'Mongodb',
+    icon: Mongodb,
   },
   {
-        name: 'ExpressJs',
-        icon: Express,
+    name: 'ExpressJs',
+    icon: Express,
   },
   {
-      name: 'Jest',
-      icon: Jest,
+    name: 'Jest',
+    icon: Jest,
   },
   {
     name: 'Nest Js',
@@ -67,13 +67,13 @@ const data = [
 
 export default function Skills() {
   return (
-    <div className='max-w-6xl mx-auto h-[700px] text-[#1F2626] dark:text-[#BDEBEA] my-40 '>
-      <h1 className='tracking-wider text-2xl mb-24'>Skills</h1>
-      <div className='grid grid-cols-4 gap-10'>
+    <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA] my-40 '>
+      <h1 className='tracking-wider text-2xl mb-24 pl-4'>Skills</h1>
+      <div className='grid grid-cols-3 sm:grid-cols-4 gap-10'>
         {data.map((items, index) => {
           return (
             <div key={index} className='flex flex-col items-center'>
-              <img src={items.icon} alt={items.name} className=' h-20'/>
+              <img src={items.icon} alt={items.name} className='h-14 sm:h-20'/>
               <p>{items.name}</p>
             </div>
           )
