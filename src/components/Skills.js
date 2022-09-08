@@ -67,7 +67,7 @@ const data = [
 
 export default function Skills() {
   return (
-    <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA] my-40 '>
+    <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-gray-100 my-40 '>
       <h1 className='tracking-wider text-2xl mb-24 pl-4'>Skills</h1>
       <div className='grid grid-cols-3 sm:grid-cols-4 gap-10'>
         {data.map((items, index) => {

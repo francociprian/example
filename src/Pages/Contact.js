@@ -22,7 +22,7 @@ const FormContact = () => {
           style={{transition: 'all 4s ease-in-out'}}
           method="post" 
           action="">
-          <label htmlFor='name' className='mt-5 pb-2 font-light font-Montserrat text-[14px] leading-4 dark:text-textDark text-textLight'>Name</label>
+          <label htmlFor='name' className='mt-5 pb-2 font-light font-Montserrat text-[14px] leading-4 dark:text-white text-textLight'>Name</label>
           <input 
             name="name" 
             value={name}
@@ -30,16 +30,16 @@ const FormContact = () => {
             type="text" 
             className="
               w-full bg-bgLight dark:bg-bgDark 
-              dark:text-textDark text-textLight 
-              rounded-md p-2
-              border border-[#534084] dark:border-textDark
-              outline-2 outline-purple-800 dark:outline-[#00F5A0]
-              focus:ring-2 focus:ring-purple-800 focus:dark:ring-1 focus:dark:ring-[#00F5A0]
+              dark:text-white text-textLight 
+              text-sm rounded-md p-2
+              border border-[#534084] dark:border-gray-200
+              outline-2 outline-purple-800 dark:outline-[#FFAFBD]
+              focus:ring-2 focus:ring-purple-800 focus:dark:ring-1 focus:dark:ring-[#FFAFBD]
               "  
             placeholder="Your Name" 
             required 
           />
-          <label htmlFor='email' className='mt-5 pb-2 font-light font-Montserrat text-[14px] leading-4 dark:text-textDark text-textLight'>Email</label>
+          <label htmlFor='email' className='mt-5 pb-2 font-light font-Montserrat text-[14px] leading-4 dark:text-white text-textLight'>Email</label>
           <input 
             name="email" 
             value={email}
@@ -47,30 +47,29 @@ const FormContact = () => {
             type="email" 
             className="
               w-full bg-bgLight dark:bg-bgDark 
-              dark:text-textDark text-textLight 
-              rounded-md p-2
-              border border-[#534084] dark:border-textDark
-              outline-2 outline-purple-800 dark:outline-[#00F5A0]
-              focus:ring-2 focus:ring-purple-800 focus:dark:ring-[#00F5A0]
+              dark:text-white text-textLight 
+              text-sm rounded-md p-2
+              border border-[#534084] dark:border-gray-200
+              outline-2 outline-purple-800 dark:outline-[#FFAFBD]
+              focus:ring-2 focus:ring-purple-800 focus:dark:ring-[#FFAFBD]
               "  
             placeholder="Your Email" 
             required 
           />
-          <label htmlFor='message' className='mt-5 pb-2 font-light font-Montserrat text-[14px] leading-4 dark:text-textDark text-textLight'>Message</label>
+          <label htmlFor='message' className='mt-5 pb-2 font-light font-Montserrat text-[14px] leading-4 dark:text-white text-textLight'>Message</label>
           <textarea 
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="
               w-full bg-bgLight dark:bg-bgDark 
-              dark:text-textDark text-textLight 
-              rounded-md p-2 
+              dark:text-white text-textLight 
+              text-sm rounded-md p-2 
               border border-[#534084] 
-              dark:border-textDark 
-              outline-2 outline-purple-800 dark:outline-[#00F5A0]
-              focus:ring-2 focus:ring-purple-800 focus:dark:ring-[#00F5A0]
-              "  
-              // style={{ borderWidth: '2px', borderStyle: 'solid', borderImage: 'linear-gradient(to right , #00F5A0, #00D9F5) 1' }}
+              dark:border-gray-200 
+              outline-2 outline-purple-800 dark:outline-[#FFAFBD]
+              focus:ring-2 focus:ring-purple-800 focus:dark:ring-[#FFAFBD]
+              "
             placeholder="Your message goes here!" 
             rows="4" 
             required>
@@ -78,10 +77,10 @@ const FormContact = () => {
           <input 
             type="submit" 
             value="SEND MESSAGE"
-            className='self-center flex justify-center items-center mt-5 pt-3 pb-3 px-5 rounded-md
-            font-Montserrat font-normal text-sm
+            className='self-center flex justify-center items-center mt-5 pt-3 pb-3 px-10 rounded-md
+            font-Montserrat font-semibold text-sm
             bg-[#5222D0] text-[#DBFFFF] dark:text-[#252728]
-            dark:bg-gradient-to-r dark:from-[#00F5A0] dark:to-[#00D9F5]'
+            dark:bg-gradient-to-r dark:from-[#FFAFBD] dark:to-[#ffc3a0] '
             />
       </form>
     </div>

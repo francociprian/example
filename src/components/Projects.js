@@ -5,7 +5,13 @@ import Button from './Button';
 
 const TechnologiesProjects = ({title}) => {
   return (
-    <p className='py-2 px-4 rounded-md bg-[#5222D0] text-[#DBFFFF] dark:bg-gradient-to-r dark:from-[#00F5A0] dark:to-[#00D9F5] dark:text-[#252728]'>{title}</p>
+    <p className='
+      py-2 px-4 rounded-md 
+      text-[#DBFFFF] dark:text-[#252728] 
+      bg-[#5222D0] dark:bg-gradient-to-r dark:from-[#FFAFBD] dark:to-[#ffc3a0] '
+    >
+      {title}
+    </p>
   )
 };
 
@@ -29,7 +35,7 @@ const CardProjects = () => {
 
 export default function Projects() {
   return (
-    <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA] my-32'>
+    <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-gray-100 my-32'>
       <h1 className='tracking-wider text-2xl mb-20 pl-4'>Projects</h1>
       <div className='grid grid-cols-1 gap-7 my-8 px-8 sm:grid-cols-2 sm:my-10 sm:px-4'>
         <CardProjects />

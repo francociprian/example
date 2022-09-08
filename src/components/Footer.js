@@ -4,7 +4,7 @@ import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 
 export default function Footer() {
   return (
-    <div className='my-10 text-[#1F2626] dark:text-[#DBFFFF] text-center max-w-sm mx-auto'>
+    <div className='my-10 text-[#1F2626] dark:text-gray-100 text-center max-w-sm mx-auto'>
       <div className='py-10 '>
         <ul  className='flex justify-evenly md:justify-between items-center'>
           <li>
@@ -12,7 +12,7 @@ export default function Footer() {
               href='https://gmail.com/'
               className='flex flex-col items-center justify-center text-base md:text-xl'
               >
-              <SiGmail className='text-[#5222D0] dark:text-[#00F5A0] text-3xl' /> 
+              <SiGmail className='text-[#5222D0] dark:text-white text-3xl' /> 
               <span className='hidden md:block md:pt-2 text-xs'>GMAIL</span>
             </a>
           </li>
@@ -21,7 +21,7 @@ export default function Footer() {
               href='https://www.linkedin.com/'
               className='flex flex-col items-center justify-center'
             >
-              <SiLinkedin className='text-[#5222D0] dark:text-[#00F5A0] text-3xl' />
+              <SiLinkedin className='text-[#5222D0] dark:text-white text-3xl' />
               <span className='hidden md:block md:pt-2 text-xs'>LINKEDIN</span>
             </a>
           </li> 
@@ -30,7 +30,7 @@ export default function Footer() {
               href='https://github.com/'
               className='flex flex-col items-center justify-center'
             >
-              <SiGithub className='text-[#5222D0] dark:text-[#00F5A0] text-3xl' />
+              <SiGithub className='text-[#5222D0] dark:text-white text-3xl' />
               <span className='hidden md:block md:pt-2 text-xs'>GITHUB</span>
             </a>
           </li>

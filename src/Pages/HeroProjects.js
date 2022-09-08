@@ -5,7 +5,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const TechnologiesProjects = ({title}) => {
   return (
-    <p className='py-2 px-4 rounded-md bg-[#5222D0] text-[#DBFFFF] dark:bg-gradient-to-r dark:from-[#00F5A0] dark:to-[#00D9F5] dark:text-[#252728]'>{title}</p>
+    <p className='
+      py-2 px-4 rounded-md 
+      text-[#DBFFFF] dark:text-[#252728] 
+      bg-[#5222D0] dark:bg-gradient-to-r dark:from-[#FFAFBD] dark:to-[#ffc3a0] '
+    >
+      {title}
+    </p>
   )
 };
 
@@ -46,7 +52,7 @@ export default function Projects() {
         animate={{ opacity: 1 }}
         transition={transition}
       >
-        <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-[#BDEBEA]'>
+        <div className='max-w-6xl mx-auto text-[#1F2626] dark:text-gray-100'>
           <h1 className='tracking-wider pt-32 text-2xl pl-4'>Projects</h1>
           <div className='grid grid-cols-1 gap-10 my-12 px-8 sm:my-28 sm:grid-cols-2 sm:px-4 '>
             <CardProjects />
